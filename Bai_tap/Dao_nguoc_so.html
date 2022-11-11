@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đảo ngược số</title>
+</head>
+<body>
+    <b>Đảo ngược số</b>
+    <input type="number" id="soNhap" />
+    <button type="button" onclick="daoNguoc()">Thực hiện</button>
+    <script>
+        function daoNguoc(){
+            let so = parseInt(document.getElementById("soNhap").value);
+            let i = 0;
+            while (so/10=0){
+                let sodonvi = i*10;                
+                let sogan =sodonvi + so%10;
+                alert(`${sogan},`);
+                i++;
+            }
+        }
+    </script>
+</body>
+</html>
