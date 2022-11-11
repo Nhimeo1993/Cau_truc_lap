@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành vòng for</title>
+</head>
+<body>
+    Nhập cái số: 
+    <input type="number" id="nhapSo" />
+    <button type="button" onclick="printxx()">Print</button>
+    <script>
+        function printxx(){
+            let so = parseInt(document.getElementById("nhapSo").value);
+            for(i=0;i<so;i++){
+                document.write(`số N là : ${i} <br>`);
+                console.log(i);
+            }
+        }
+    </script>
+</body>
+</html>
